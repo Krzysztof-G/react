@@ -36,9 +36,7 @@ class Creator extends React.Component {
   }
 
   handleCancel = () => {
-    if (window.confirm("Do you really want to leave?")) { 
-      window.open("exit.html", "Thanks for Visiting!");
-    }
+    if (window.confirm("Do you really want to leave?")) 
     this.setState({
       value: '',
       visibleButtons: false
