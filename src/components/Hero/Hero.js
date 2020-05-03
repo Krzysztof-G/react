@@ -4,16 +4,18 @@ import PropTypes from 'prop-types';
 import ReactHtmlParser from 'react-html-parser';
 
 const Hero = props => (
-    <header className={styles.component}>
-        <h2 className={styles.title}>{ReactHtmlParser(props.titleText)}</h2>
-        <img className={styles.image} src={props.imageText} />
-    </header>
-)
+  <header className={styles.component}>
+    <h2 className={styles.title}>{ReactHtmlParser(props.titleText)}</h2>
+    <img className={styles.image} src={props.imageText} />
+  </header>
+);
 
-export default Hero;
-Hero.popTypes = {
-    titleText: PropTypes.node.isRequired,
+Hero.propTypes = {
+  titleText: PropTypes.node.isRequired,
+  imageText: PropTypes.node,
 };
+export default Hero;
+
 
 // funkcja strzałkowa czemu wyswietla blad przy znaku = ?
 
