@@ -33,7 +33,6 @@ export const subPageContents = {
     title: 'FAQ - ask a <sup>question</sup>',
     subTitle: 'Get an answer',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
 
 };
@@ -94,10 +93,23 @@ export const listData = {
 const lists = [
   {
     id: 'list-1',
-    title: 'Things to do <sup>soon!</sup>',
+    title: 'Things to do <sup>on the day!</sup>',
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'Things to do <sup>in a month!</sup>',
+    description: 'Interesting things I want to check out!',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
+  {
+    id: 'list-3',
+    title: 'Side things to do <sup>soon!</sup>',
+    description: 'Things you can do later!',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
+
 ];
 
 const columns = [

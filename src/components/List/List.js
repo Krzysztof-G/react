@@ -7,6 +7,7 @@ import { settings } from '../../data/dataStore';
 import ReactHtmlParser from 'react-html-parser';
 import Creator from '../Creator/Creator.js';
 import Container from '../Container/Container';
+import {subPageContents} from '../../data/dataStore';
 
 
 class List extends React.Component {
@@ -39,11 +40,11 @@ class List extends React.Component {
     //   ));
     // }
     render() {
-      const {title, image, description, columns, addColumn} = this.props;
+      const {description, columns, addColumn, title} = this.props;
       return (
         <section className={styles.component}>
           <Container>
-            <h2><Hero titleText={title} imageText={image} /></h2>
+            <h2><Hero titleText={title} imageText={subPageContents.info.image} /></h2>
             <div className={styles.description}>
               {ReactHtmlParser(description)}
             </div>

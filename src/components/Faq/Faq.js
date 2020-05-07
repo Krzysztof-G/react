@@ -7,7 +7,7 @@ import {subPageContents} from '../../data/dataStore';
 
 const Faq = () => (
   <Container>
-    <Hero titleText={subPageContents.faq.title} imageText={subPageContents.faq.image} />
+    <Hero titleText={subPageContents.faq.title} imageText={subPageContents.info.image} />
     <h2>{subPageContents.faq.subTitle}</h2>
     <p>{subPageContents.faq.description}</p>
   </Container>
